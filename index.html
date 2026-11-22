@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Áncora Conecta</title>
+<meta name="description" content="Portal digital para bodas destino: invitaciones, agenda, transmisión privada, mensajes, galería e interacción en un solo lugar.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="logo" viewBox="0 0 64 64">
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+        <path d="M12 52V30a20 20 0 0 1 40 0v22" stroke="var(--clay)"/>
+        <circle cx="26" cy="33" r="9" stroke="var(--sage)"/>
+        <circle cx="38" cy="33" r="9" stroke="var(--rose)"/>
+        <circle cx="32" cy="33" r="1.6" fill="var(--clay)" stroke="none"/>
+        <path d="M6 58q3-3 6 0t6 0 6 0 6 0 6 0 6 0 6 0 6 0" stroke="var(--clay)"/>
+      </g>
+    </symbol>
+    <symbol id="i-live" viewBox="0 0 24 24"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="M16 10l6-3v10l-6-3"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0014 0M12 18v3"/></symbol>
+    <symbol id="i-qr" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3h-3zM20 14v7M14 20h3"/></symbol>
+    <symbol id="i-img" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 16l-5-5-9 9"/></symbol>
+    <symbol id="i-poll" viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-8M22 20H2"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14A8 8 0 0110 4a8 8 0 1010 10z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></symbol>
+  </defs>
+</svg>
+
+<div class="announce">Versión de demostración · Interfaz en español, inglés próximamente</div>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Áncora Conecta, inicio">
+      <svg class="brand-mark" aria-hidden="true"><use href="#logo"/></svg>
+      <span class="brand-word"><b>Áncora</b><i>Conecta</i></span>
+    </a>
+    <nav class="site-nav" id="site-nav" aria-label="Principal">
+      <a href="#etapas">Etapas</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#para-quien">Para quién</a>
+      <a href="#contacto">Contacto</a>
+      <a class="btn primary" href="portal.html">Acceder al módulo</a>
+    </nav>
+    <div class="head-actions">
+      <div class="lang" role="group" aria-label="Idioma">
+        <button class="on" type="button" aria-pressed="true">ES</button>
+        <button type="button" id="lang-en" aria-pressed="false" title="Próximamente">EN <small>pronto</small></button>
+      </div>
+      <button class="icon-btn" id="theme" type="button" aria-label="Cambiar tema claro u oscuro"><svg class="ic"><use href="#i-moon"/></svg></button>
+      <a class="btn primary sm" href="portal.html">Acceder al módulo</a>
+      <button class="menu-btn" id="menu-btn" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-nav"><svg class="ic"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="land-hero">
+    <div class="wrap">
+      <div>
+        <span class="chip rose">Para bodas destino</span>
+        <h1>Su boda, <em>conectada</em> de la invitación al último recuerdo</h1>
+        <p class="lead">Áncora Conecta reúne en un solo portal las invitaciones, la agenda, la transmisión privada y los recuerdos de la boda, para quienes viajan y para quienes la viven desde casa.</p>
+        <div class="cta-row">
+          <a class="btn primary lg" href="portal.html">Acceder al módulo <svg class="ic"><use href="#i-arrow"/></svg></a>
+          <a class="btn ghost lg" href="#etapas">Ver las etapas</a>
+        </div>
+        <div class="trust"><span>Acceso privado por código</span><span>Sin descargar apps</span><span>Español, inglés próximamente</span></div>
+      </div>
+      <div class="art" aria-hidden="true">
+        <div class="arch-big">
+          <div class="sun"></div>
+          <svg class="dunes" viewBox="0 0 400 160" preserveAspectRatio="none"><path d="M0 70 Q100 20 200 70 T400 60 V160 H0Z"/><path d="M0 110 Q120 70 240 110 T400 100 V160 H0Z"/></svg>
+        </div>
+        <div class="float f1"><span class="dot"><svg class="ic"><use href="#i-mail"/></svg></span><div><b>86 confirmaciones</b><small>de 120 invitados</small></div></div>
+        <div class="float f2"><span class="dot s"><svg class="ic"><use href="#i-live"/></svg></span><div><b>Ceremonia en vivo</b><small>48 conectados</small></div></div>
+        <div class="float f3"><span class="dot"><svg class="ic"><use href="#i-mic"/></svg></span><div><b>Nuevo mensaje</b><small>de la abuela Rosa</small></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ETAPAS -->
+  <section class="band alt" id="etapas">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">El recorrido</span>
+        <h2>Cada etapa de la boda tiene sus herramientas</h2>
+        <p>Los módulos se ordenan como ocurre la celebración: primero se invita y se organiza, después se vive la ceremonia y la fiesta, y al final se guardan los recuerdos.</p>
+      </div>
+      <div class="journey">
+        <article class="stage">
+          <div class="stage-info"><span class="stage-num">1</span><h3>Antes de la boda</h3><p>Invitar, confirmar y coordinar a todos.</p></div>
+          <div class="mods">
+            <a class="mod" href="portal.html#rsvp"><svg class="ic big"><use href="#i-mail"/></svg><h4>Invitación y RSVP</h4><p>Invitación digital y confirmación presencial o virtual, con acompañantes y menú.</p></a>
+            <a class="mod" href="portal.html#agenda"><svg class="ic big"><use href="#i-cal"/></svg><h4>Agenda digital</h4><p>Cronograma de los tres días, recordatorios y avisos de cambios.</p></a>
+          </div>
+        </article>
+        <article class="stage">
+          <div class="stage-info"><span class="stage-num">2</span><h3>La ceremonia</h3><p>Que nadie se la pierda, esté donde esté.</p></div>
+          <div class="mods">
+            <a class="mod" href="portal.html#transmision"><svg class="ic big"><use href="#i-live"/></svg><h4>Transmisión privada</h4><p>Emisión en directo con acceso por código y grabación para revivirla.</p></a>
+          </div>
+        </article>
+        <article class="stage">
+          <div class="stage-info"><span class="stage-num">3</span><h3>La recepción</h3><p>Que todos participen desde su mesa.</p></div>
+          <div class="mods">
+            <a class="mod" href="portal.html#qr"><svg class="ic big"><use href="#i-qr"/></svg><h4>Participación por QR</h4><p>Un código en cada mesa para unirse desde el celular.</p></a>
+            <a class="mod" href="portal.html#interaccion"><svg class="ic big"><use href="#i-poll"/></svg><h4>Interacción en vivo</h4><p>Votaciones, canciones y actividades en tiempo real.</p></a>
+            <a class="mod" href="portal.html#mensajes"><svg class="ic big"><use href="#i-mic"/></svg><h4>Mensajes multimedia</h4><p>Audios y videos de los invitados para los novios.</p></a>
+          </div>
+        </article>
+        <article class="stage">
+          <div class="stage-info"><span class="stage-num">4</span><h3>Los recuerdos</h3><p>Todo lo vivido, en un solo álbum.</p></div>
+          <div class="mods">
+            <a class="mod" href="portal.html#galeria"><svg class="ic big"><use href="#i-img"/></svg><h4>Galería colaborativa</h4><p>Fotos, videos y dedicatorias de todos los invitados.</p></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CÓMO FUNCIONA -->
+  <section class="band" id="como-funciona">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Cómo funciona</span>
+        <h2>De la planeación a la celebración en tres pasos</h2>
+      </div>
+      <div class="how">
+        <div><span class="n">1</span><h3>Planean con Áncora</h3><p>El equipo de Áncora Bodas Destino configura el portal con la fecha, el lugar, los invitados y los módulos del paquete.</p></div>
+        <div><span class="n">2</span><h3>Invitan a todos</h3><p>Cada invitado recibe su enlace o código personal y confirma si asistirá en persona o por transmisión.</p></div>
+        <div><span class="n">3</span><h3>Celebran y recuerdan</h3><p>Durante la boda todos participan desde el celular, y después reciben la grabación y el álbum compartido.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARA QUIÉN -->
+  <section class="band alt" id="para-quien">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Para quién</span>
+        <h2>Pensado para los novios y para cada invitado</h2>
+      </div>
+      <div class="who">
+        <div class="panel"><h3>Para los novios</h3>
+          <ul><li>Ven en un panel quién confirmó y cómo asistirá.</li><li>Cambian la agenda y avisan a todos al instante.</li><li>Reciben mensajes y fotos sin perseguir a nadie.</li></ul>
+        </div>
+        <div class="panel"><h3>Para los invitados</h3>
+          <ul><li>Entran con un código, sin crear cuentas ni instalar apps.</li><li>Ven la ceremonia en directo si están lejos.</li><li>Votan canciones y suben sus fotos desde la mesa.</li></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="band" id="contacto">
+    <div class="wrap">
+      <div class="cta-band">
+        <div>
+          <h2>Conoce el portal por dentro</h2>
+          <p>Recorre el módulo de demostración con datos de ejemplo y mira cómo se vería para su boda.</p>
+        </div>
+        <a class="btn primary lg" href="portal.html">Acceder al módulo <svg class="ic"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="index.html"><svg class="brand-mark" aria-hidden="true"><use href="#logo"/></svg><span class="brand-word"><b>Áncora</b><i>Conecta</i></span></a>
+        <p class="muted">Herramientas digitales para bodas destino, un complemento de Áncora Bodas Destino.</p>
+      </div>
+      <div>
+        <h4>Etapas</h4>
+        <ul>
+          <li><a href="portal.html#rsvp">Antes de la boda</a></li>
+          <li><a href="portal.html#transmision">La ceremonia</a></li>
+          <li><a href="portal.html#qr">La recepción</a></li>
+          <li><a href="portal.html#galeria">Los recuerdos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Áncora</h4>
+        <ul>
+          <li><a href="#como-funciona">Cómo funciona</a></li>
+          <li><a href="#para-quien">Para quién</a></li>
+          <li><a href="portal.html">Acceder al módulo</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li>hola@ancoraconecta.com</li>
+          <li>+57 300 000 0000</li>
+          <li class="small muted">Datos de ejemplo</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bar">
+      <span>© 2026 Áncora Conecta · Áncora Bodas Destino</span>
+      <span>Política de privacidad · Términos de uso (por definir) · Idioma: español, inglés próximamente</span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+<script src="site.js"></script>
+</body>
+</html>

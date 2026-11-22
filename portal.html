@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portal de Bodas · Áncora Conecta</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="logo" viewBox="0 0 64 64">
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+        <path d="M12 52V30a20 20 0 0 1 40 0v22" stroke="var(--clay)"/>
+        <circle cx="26" cy="33" r="9" stroke="var(--sage)"/>
+        <circle cx="38" cy="33" r="9" stroke="var(--rose)"/>
+        <circle cx="32" cy="33" r="1.6" fill="var(--clay)" stroke="none"/>
+        <path d="M6 58q3-3 6 0t6 0 6 0 6 0 6 0 6 0 6 0 6 0" stroke="var(--clay)"/>
+      </g>
+    </symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8M5 10v10h14V10"/></symbol>
+    <symbol id="i-live" viewBox="0 0 24 24"><rect x="2" y="6" width="14" height="12" rx="2"/><path d="M16 10l6-3v10l-6-3"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0014 0M12 18v3"/></symbol>
+    <symbol id="i-qr" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><path d="M14 14h3v3h-3zM20 14v7M14 20h3"/></symbol>
+    <symbol id="i-img" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 16l-5-5-9 9"/></symbol>
+    <symbol id="i-poll" viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-8M22 20H2"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+    <symbol id="i-bell" viewBox="0 0 24 24"><path d="M6 17V11a6 6 0 0112 0v6l2 2H4zM10 21h4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14A8 8 0 0110 4a8 8 0 1010 10z"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><path d="M12 16V4M7 9l5-5 5 5M4 20h16"/></symbol>
+    <symbol id="i-back" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></symbol>
+  </defs>
+</svg>
+
+<div class="app">
+
+  <aside class="side">
+    <a class="brand" href="index.html" aria-label="Áncora Conecta, sitio principal">
+      <svg class="brand-mark" aria-hidden="true"><use href="#logo"/></svg>
+      <span class="brand-word"><b>Áncora</b><i>Conecta</i></span>
+    </a>
+    <nav class="nav" aria-label="Módulos del portal">
+      <a href="#inicio" data-nav="inicio"><svg class="ic"><use href="#i-home"/></svg><span>Inicio del portal</span></a>
+
+      <div class="nav-group">
+        <div class="nav-label">Etapa 1<span>Antes de la boda</span></div>
+        <a href="#rsvp" data-nav="rsvp"><svg class="ic"><use href="#i-mail"/></svg><span>Invitación y RSVP</span></a>
+        <a href="#agenda" data-nav="agenda"><svg class="ic"><use href="#i-cal"/></svg><span>Agenda digital</span></a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-label">Etapa 2<span>La ceremonia</span></div>
+        <a href="#transmision" data-nav="transmision"><svg class="ic"><use href="#i-live"/></svg><span>Transmisión privada</span></a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-label">Etapa 3<span>La recepción</span></div>
+        <a href="#qr" data-nav="qr"><svg class="ic"><use href="#i-qr"/></svg><span>Participación por QR</span></a>
+        <a href="#interaccion" data-nav="interaccion"><svg class="ic"><use href="#i-poll"/></svg><span>Interacción en vivo</span></a>
+        <a href="#mensajes" data-nav="mensajes"><svg class="ic"><use href="#i-mic"/></svg><span>Mensajes multimedia</span></a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-label">Etapa 4<span>Los recuerdos</span></div>
+        <a href="#galeria" data-nav="galeria"><svg class="ic"><use href="#i-img"/></svg><span>Galería colaborativa</span></a>
+      </div>
+    </nav>
+    <a class="back" href="index.html"><svg class="ic"><use href="#i-back"/></svg>Volver al sitio principal</a>
+  </aside>
+
+  <div class="main">
+    <header class="top">
+      <div class="crumb"><span class="muted">Valentina &amp; Andrés</span><span class="sep">/</span><span class="muted" id="crumb-stage">Portal</span><span class="sep">/</span><strong id="crumb">Inicio</strong></div>
+      <div class="top-actions">
+        <div class="lang" role="group" aria-label="Idioma">
+          <button class="on" type="button" aria-pressed="true">ES</button>
+          <button type="button" id="lang-en" aria-pressed="false" title="Próximamente">EN <small>pronto</small></button>
+        </div>
+        <button class="icon-btn" id="theme" type="button" aria-label="Cambiar tema claro u oscuro"><svg class="ic"><use href="#i-moon"/></svg></button>
+      </div>
+    </header>
+
+    <main class="content">
+
+      <!-- ============ INICIO ============ -->
+      <section data-view="inicio">
+        <div class="hero">
+          <div class="hero-copy">
+            <span class="chip rose">Boda destino · Isla Barú, Cartagena</span>
+            <h1>Valentina <em>&amp;</em> Andrés</h1>
+            <p class="lead">Este es su portal. Sigan las cuatro etapas de la boda, de la invitación a los recuerdos, y encuentren cada herramienta en su momento.</p>
+            <div class="hero-cta">
+              <a class="btn primary" href="#rsvp">Gestionar invitados</a>
+              <a class="btn ghost" href="#agenda">Ver la agenda</a>
+            </div>
+          </div>
+          <div class="hero-side">
+            <div class="count" aria-label="Cuenta regresiva">
+              <div><b id="cd-d">000</b><span>días</span></div>
+              <div><b id="cd-h">00</b><span>horas</span></div>
+              <div><b id="cd-m">00</b><span>min</span></div>
+            </div>
+            <p class="count-note">Sábado 13 de marzo de 2027 · 5:00 p. m.</p>
+          </div>
+        </div>
+
+        <div class="split">
+          <div class="panel">
+            <h3>Resumen de confirmaciones</h3>
+            <div class="stat-row"><div class="stat"><b>86</b><span>presencial</span></div><div class="stat"><b>21</b><span>virtual</span></div><div class="stat"><b>13</b><span>pendientes</span></div></div>
+            <div class="bar"><i style="width:72%"></i><i class="b2" style="width:17%"></i></div>
+            <p class="muted small">Datos de ejemplo para la demostración.</p>
+          </div>
+          <div class="panel">
+            <h3>Próximo en la agenda</h3>
+            <ul class="mini-list">
+              <li><time>Vie 12 · 5:00 p. m.</time><span>Bienvenida y cóctel en la playa</span></li>
+              <li><time>Sáb 13 · 9:00 a. m.</time><span>Brunch de las familias</span></li>
+              <li><time>Sáb 13 · 5:00 p. m.</time><span>Ceremonia frente al mar</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="stage-title"><span class="stage-num">1</span><h2>Antes de la boda</h2><p>Invitar, confirmar y coordinar</p></div>
+        <div class="cards">
+          <a class="card" href="#rsvp"><span class="chip">86 de 120</span><svg class="ic big"><use href="#i-mail"/></svg><h3>Invitación y RSVP</h3><p>Invitación digital, confirmación de asistencia y lista de invitados.</p></a>
+          <a class="card" href="#agenda"><span class="chip">8 momentos</span><svg class="ic big"><use href="#i-cal"/></svg><h3>Agenda digital</h3><p>Cronograma de los tres días, recordatorios y avisos de cambios.</p></a>
+        </div>
+
+        <div class="stage-title"><span class="stage-num">2</span><h2>La ceremonia</h2><p>Para quienes están y para quienes miran desde casa</p></div>
+        <div class="cards">
+          <a class="card" href="#transmision"><span class="chip live">Sáb 5:00 p. m.</span><svg class="ic big"><use href="#i-live"/></svg><h3>Transmisión privada</h3><p>Emisión en directo con código de acceso, comentarios y grabación.</p></a>
+        </div>
+
+        <div class="stage-title"><span class="stage-num">3</span><h2>La recepción</h2><p>Todos participan desde su mesa</p></div>
+        <div class="cards">
+          <a class="card" href="#qr"><span class="chip">14 mesas</span><svg class="ic big"><use href="#i-qr"/></svg><h3>Participación por QR</h3><p>Un código en cada mesa para unirse desde el celular.</p></a>
+          <a class="card" href="#interaccion"><span class="chip">2 activas</span><svg class="ic big"><use href="#i-poll"/></svg><h3>Interacción en vivo</h3><p>Votaciones, canciones y actividades que se actualizan al instante.</p></a>
+          <a class="card" href="#mensajes"><span class="chip">24 mensajes</span><svg class="ic big"><use href="#i-mic"/></svg><h3>Mensajes multimedia</h3><p>Audios y videos de los invitados dirigidos a los novios.</p></a>
+        </div>
+
+        <div class="stage-title"><span class="stage-num">4</span><h2>Los recuerdos</h2><p>Todo lo vivido, en un solo lugar</p></div>
+        <div class="cards">
+          <a class="card" href="#galeria"><span class="chip">312 recuerdos</span><svg class="ic big"><use href="#i-img"/></svg><h3>Galería colaborativa</h3><p>Fotos, videos y dedicatorias de todos los invitados.</p></a>
+          <div class="card soon"><span class="chip warm">Próximamente</span><svg class="ic big"><use href="#i-lock"/></svg><h3>English version</h3><p>El portal está preparado para traducirse al inglés y recibir invitados de otros países.</p></div>
+        </div>
+      </section>
+
+      <!-- ============ ETAPA 1: RSVP ============ -->
+      <section data-view="rsvp" data-stage="Etapa 1 · Antes de la boda" hidden>
+        <div class="page-head"><span class="chip stage-chip">Etapa 1 · Antes de la boda</span><h2>Invitación y confirmación</h2><p class="muted">Cada invitado recibe su invitación y confirma si asiste en persona o por transmisión.</p></div>
+        <div class="subtabs" data-subs role="tablist">
+          <button class="on" type="button" data-sub="invitacion">Invitación</button>
+          <button type="button" data-sub="confirmar">Confirmar asistencia</button>
+          <button type="button" data-sub="lista">Lista de invitados</button>
+        </div>
+
+        <div data-pane="invitacion">
+          <article class="invite">
+            <svg class="invite-mark" aria-hidden="true"><use href="#logo"/></svg>
+            <span class="eyebrow">Con alegría los invitamos</span>
+            <h3>Valentina <em>&amp;</em> Andrés</h3>
+            <p>Sábado 13 de marzo de 2027<br>5:00 p. m. · Isla Barú, Cartagena</p>
+            <p class="small">Tres días frente al mar. Vestimenta: lino claro.</p>
+            <button class="btn primary" type="button" data-go-sub="confirmar">Confirmar asistencia</button>
+          </article>
+        </div>
+
+        <div data-pane="confirmar" hidden>
+          <form class="panel form" id="rsvp-form" novalidate style="max-width:640px">
+            <h3>¿Nos acompañas?</h3>
+            <div><label for="r-name">Nombre completo</label><input id="r-name" type="text" value="Laura Restrepo"></div>
+            <fieldset>
+              <legend>Asistencia</legend>
+              <label class="opt"><input type="radio" name="att" value="pres" checked><span>Estaré presente</span></label>
+              <label class="opt"><input type="radio" name="att" value="virt"><span>Lo veré por transmisión</span></label>
+              <label class="opt"><input type="radio" name="att" value="no"><span>No podré asistir</span></label>
+            </fieldset>
+            <div class="row">
+              <div><label for="r-guests">Acompañantes</label><select id="r-guests"><option>0</option><option selected>1</option><option>2</option><option>3</option></select></div>
+              <div><label for="r-menu">Menú</label><select id="r-menu"><option>Pescado del día</option><option>Pollo al coco</option><option>Vegetariano</option></select></div>
+            </div>
+            <div><label for="r-note">Un mensaje para los novios</label><textarea id="r-note" rows="3" placeholder="Opcional"></textarea></div>
+            <button class="btn primary" type="submit">Enviar respuesta</button>
+            <p class="ok" id="rsvp-ok" hidden>Respuesta registrada en la demostración. En la versión final llegará al panel de los novios.</p>
+          </form>
+        </div>
+
+        <div data-pane="lista" hidden>
+          <div class="panel">
+            <h3>Lista de invitados</h3>
+            <div class="table-wrap">
+              <table>
+                <thead><tr><th>Invitado</th><th>Asistencia</th><th class="num">Acompañantes</th><th>Menú</th><th>Mesa</th></tr></thead>
+                <tbody>
+                  <tr><td>Laura Restrepo</td><td><span class="chip">Presencial</span></td><td class="num">1</td><td>Pescado del día</td><td>7</td></tr>
+                  <tr><td>Camilo Vargas</td><td><span class="chip rose">Virtual</span></td><td class="num">1</td><td>—</td><td>—</td></tr>
+                  <tr><td>Marcela Ortiz</td><td><span class="chip">Presencial</span></td><td class="num">2</td><td>Pollo al coco</td><td>3</td></tr>
+                  <tr><td>Hernán Duque</td><td><span class="chip warm">Pendiente</span></td><td class="num">0</td><td>—</td><td>—</td></tr>
+                  <tr><td>Daniela Pérez</td><td><span class="chip">Presencial</span></td><td class="num">0</td><td>Vegetariano</td><td>4</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="muted small">Datos de ejemplo. En la versión final se podrán filtrar, exportar y enviar recordatorios.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ETAPA 1: AGENDA ============ -->
+      <section data-view="agenda" data-stage="Etapa 1 · Antes de la boda" hidden>
+        <div class="page-head"><span class="chip stage-chip">Etapa 1 · Antes de la boda</span><h2>Agenda digital</h2><p class="muted">Los tres días de celebración, con recordatorios y avisos cuando algo cambia.</p></div>
+        <div class="subtabs" data-subs role="tablist">
+          <button class="on" type="button" data-sub="cronograma">Cronograma</button>
+          <button type="button" data-sub="avisos">Avisos y notificaciones</button>
+        </div>
+        <div data-pane="cronograma">
+          <div class="alert"><svg class="ic"><use href="#i-bell"/></svg><div><b>Actualización reciente.</b> El cóctel del sábado se mueve a las 6:15 p. m. por la marea.</div></div>
+          <div class="timeline" id="timeline"></div>
+        </div>
+        <div data-pane="avisos" hidden>
+          <div class="panel" style="max-width:640px">
+            <h3>¿Cómo quieres recibir los avisos?</h3>
+            <ul class="rows">
+              <li><div><b>WhatsApp</b><small>Recordatorios y cambios de horario</small></div><button class="switch" type="button" aria-pressed="true" aria-label="WhatsApp"></button></li>
+              <li><div><b>Correo electrónico</b><small>Resumen semanal y detalles de viaje</small></div><button class="switch" type="button" aria-pressed="true" aria-label="Correo electrónico"></button></li>
+              <li><div><b>Notificación del navegador</b><small>Avisos el día de la boda</small></div><button class="switch" type="button" aria-pressed="false" aria-label="Notificación del navegador"></button></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ETAPA 2: TRANSMISIÓN ============ -->
+      <section data-view="transmision" data-stage="Etapa 2 · La ceremonia" hidden>
+        <div class="page-head"><span class="chip stage-chip">Etapa 2 · La ceremonia</span><h2>Transmisión privada</h2><p class="muted">Emisión en directo de la ceremonia, solo para invitados con código, y grabación disponible después.</p></div>
+        <div class="subtabs" data-subs role="tablist">
+          <button class="on" type="button" data-sub="directo">En directo</button>
+          <button type="button" data-sub="grabaciones">Grabaciones</button>
+          <button type="button" data-sub="acceso">Acceso y privacidad</button>
+        </div>
+
+        <div data-pane="directo">
+          <div class="stream">
+            <div class="player-col">
+              <div class="player">
+                <div class="scene" aria-hidden="true"><div class="sun2"></div><div class="sea"></div><div class="arch"></div></div>
+                <span class="badge-live"><i></i>EN VIVO</span>
+                <span class="viewers" id="viewers">48 conectados</span>
+                <button class="play" type="button" id="play" aria-label="Reproducir"><svg class="ic"><use href="#i-play"/></svg></button>
+                <div class="controls"><div class="progress"><i></i></div><span>00:42:18</span></div>
+              </div>
+              <div class="note"><svg class="ic"><use href="#i-lock"/></svg><div><b>Acceso privado.</b> Cada invitado entra con su código personal. El enlace no se puede compartir ni indexar.</div></div>
+            </div>
+            <aside class="chat panel">
+              <h3>Comentarios en vivo</h3>
+              <ul id="chat" class="chat-list">
+                <li><b>Tía Marcela</b> ¡Qué hermoso el arco de flores!</li>
+                <li><b>Camilo (Madrid)</b> Desde España con lágrimas 😭</li>
+                <li><b>Abuela Rosa</b> Dios los bendiga mis niños</li>
+              </ul>
+              <form class="chat-form" id="chat-form"><input id="chat-input" type="text" placeholder="Escribe un mensaje" aria-label="Mensaje"><button class="btn primary sm" type="submit">Enviar</button></form>
+            </aside>
+          </div>
+        </div>
+
+        <div data-pane="grabaciones" hidden>
+          <ul class="recs">
+            <li><div class="th g1"></div><div class="info"><b>Ceremonia completa</b><small>1:12:40 · Disponible 24 h después</small></div></li>
+            <li><div class="th g2"></div><div class="info"><b>Entrada y votos</b><small>18:05 · Resumen</small></div></li>
+            <li><div class="th g3"></div><div class="info"><b>Brindis de la recepción</b><small>9:30 · Resumen</small></div></li>
+          </ul>
+        </div>
+
+        <div data-pane="acceso" hidden>
+          <div class="split three" style="margin-top:0">
+            <div class="panel"><h3>Código de acceso</h3><p class="muted">Para toda la familia: <b class="mono">ANCORA-VA27</b></p></div>
+            <div class="panel"><h3>Quién puede ver</h3><p class="muted">Solo invitados confirmados como presenciales o virtuales.</p></div>
+            <div class="panel"><h3>Calidad</h3><p class="muted">Se adapta a la conexión de cada invitado.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ETAPA 3: QR ============ -->
+      <section data-view="qr" data-stage="Etapa 3 · La recepción" hidden>
+        <div class="page-head"><span class="chip stage-chip">Etapa 3 · La recepción</span><h2>Participación virtual por QR</h2><p class="muted">En cada mesa hay un código. Al escanearlo, el invitado entra al portal desde su celular.</p></div>
+        <div class="split" style="margin-top:0">
+          <div class="panel qrbox">
+            <div class="qr-frame"><svg id="qr" viewBox="0 0 25 25" shape-rendering="crispEdges" role="img" aria-label="Código QR de ejemplo"></svg></div>
+            <b>Mesa 7 · Familia Restrepo</b>
+            <span class="muted small">Código de ejemplo, no es escaneable.</span>
+          </div>
+          <div class="panel">
+            <h3>Cómo funciona</h3>
+            <ol class="steps">
+              <li><b>Escanea</b><span>Abre la cámara del celular y apunta al código de la mesa.</span></li>
+              <li><b>Entra</b><span>Se abre el portal con la mesa ya identificada.</span></li>
+              <li><b>Participa</b><span>Vota canciones, sube fotos y deja mensajes al instante.</span></li>
+            </ol>
+            <div class="stat-row"><div class="stat"><b>14</b><span>mesas</span></div><div class="stat"><b>96</b><span>escaneos</span></div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ETAPA 3: INTERACCIÓN ============ -->
+      <section data-view="interaccion" data-stage="Etapa 3 · La recepción" hidden>
+        <div class="page-head"><span class="chip stage-chip">Etapa 3 · La recepción</span><h2>Interacción en tiempo real</h2><p class="muted">Votaciones, canciones y actividades que los invitados resuelven desde el celular.</p></div>
+        <div class="subtabs" data-subs role="tablist">
+          <button class="on" type="button" data-sub="votaciones">Votaciones</button>
+          <button type="button" data-sub="musica">Canciones</button>
+          <button type="button" data-sub="actividades">Actividades</button>
+        </div>
+        <div data-pane="votaciones">
+          <div class="panel" style="max-width:640px">
+            <h3>¿Dónde será la luna de miel?</h3>
+            <ul class="poll" id="poll"></ul>
+            <p class="muted small" id="poll-total"></p>
+          </div>
+        </div>
+        <div data-pane="musica" hidden>
+          <div class="panel" style="max-width:640px">
+            <h3>Pide una canción</h3>
+            <ul class="songs" id="songs"></ul>
+            <form class="chat-form" id="song-form"><input id="song-input" type="text" placeholder="Canción y artista" aria-label="Canción"><button class="btn primary sm" type="submit">Pedir</button></form>
+          </div>
+        </div>
+        <div data-pane="actividades" hidden>
+          <div class="split three" style="margin-top:0">
+            <div class="panel act"><span class="chip live">Activa</span><h3>Trivia de los novios</h3><p class="muted">10 preguntas sobre cómo se conocieron.</p></div>
+            <div class="panel act"><span class="chip">Próxima</span><h3>Foto en mesa</h3><p class="muted">Cada mesa sube una foto con el mejor gesto.</p></div>
+            <div class="panel act"><span class="chip">Próxima</span><h3>Brindis colectivo</h3><p class="muted">Frases de deseos que aparecen en pantalla.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ETAPA 3: MENSAJES ============ -->
+      <section data-view="mensajes" data-stage="Etapa 3 · La recepción" hidden>
+        <div class="page-head"><span class="chip stage-chip">Etapa 3 · La recepción</span><h2>Mensajes para los novios</h2><p class="muted">Los invitados graban un audio o un video y lo dejan guardado para Valentina y Andrés.</p></div>
+        <div class="subtabs" data-subs role="tablist">
+          <button class="on" type="button" data-sub="grabar">Dejar un mensaje</button>
+          <button type="button" data-sub="recibidos">Mensajes recibidos</button>
+        </div>
+        <div data-pane="grabar">
+          <div class="panel rec" style="max-width:640px">
+            <h3>Deja tu mensaje</h3>
+            <div class="seg" id="rec-kind"><button type="button" class="on" data-k="audio">Audio</button><button type="button" data-k="video">Video</button></div>
+            <div class="wave" id="wave" aria-hidden="true"></div>
+            <div class="rec-time" id="rec-time">00:00</div>
+            <button class="btn primary" id="rec-btn" type="button">Empezar a grabar</button>
+            <p class="muted small">Máximo 2 minutos. Solo los novios pueden escucharlo.</p>
+          </div>
+        </div>
+        <div data-pane="recibidos" hidden>
+          <div class="panel" style="max-width:640px">
+            <h3>Mensajes recibidos</h3>
+            <ul class="msgs">
+              <li><span class="avatar">M</span><div><b>Mamá de Andrés</b><small>Audio · 1:12</small></div><button class="pill" type="button">Escuchar</button></li>
+              <li><span class="avatar a2">C</span><div><b>Camilo y Sofía</b><small>Video · 0:48</small></div><button class="pill" type="button">Ver</button></li>
+              <li><span class="avatar a3">R</span><div><b>Abuela Rosa</b><small>Audio · 0:35</small></div><button class="pill" type="button">Escuchar</button></li>
+              <li><span class="avatar a4">P</span><div><b>Primos de Bogotá</b><small>Video · 1:40</small></div><button class="pill" type="button">Ver</button></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ETAPA 4: GALERÍA ============ -->
+      <section data-view="galeria" data-stage="Etapa 4 · Los recuerdos" hidden>
+        <div class="page-head"><span class="chip stage-chip">Etapa 4 · Los recuerdos</span><h2>Galería colaborativa</h2><p class="muted">Fotos, videos y dedicatorias de todos los invitados en un solo álbum.</p></div>
+        <div class="gal-bar">
+          <div class="seg" id="gal-filter"><button type="button" class="on" data-f="all">Todo</button><button type="button" data-f="foto">Fotos</button><button type="button" data-f="video">Videos</button><button type="button" data-f="nota">Dedicatorias</button></div>
+          <button class="btn primary sm" type="button" id="upload"><svg class="ic"><use href="#i-up"/></svg>Subir recuerdo</button>
+        </div>
+        <div class="drop" id="drop">Arrastra aquí tus fotos y videos o toca “Subir recuerdo”. Es una demostración y no guarda archivos.</div>
+        <div class="grid" id="grid"></div>
+      </section>
+
+    </main>
+
+    <footer class="foot">
+      <span>Áncora Conecta · Prototipo visual de demostración · Datos de ejemplo</span>
+      <span class="muted">Interfaz en español. Versión en inglés próximamente.</span>
+    </footer>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>

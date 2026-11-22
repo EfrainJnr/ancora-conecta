@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" role="img" aria-label="Áncora Conecta">
+  <path d="M12 52V30a20 20 0 0 1 40 0v22" stroke="#B5754F"/>
+  <circle cx="26" cy="33" r="9" stroke="#7C9A86"/>
+  <circle cx="38" cy="33" r="9" stroke="#C9807B"/>
+  <circle cx="32" cy="33" r="1.6" fill="#B5754F" stroke="none"/>
+  <path d="M6 58q3-3 6 0t6 0 6 0 6 0 6 0 6 0 6 0 6 0" stroke="#B5754F"/>
+</svg>
